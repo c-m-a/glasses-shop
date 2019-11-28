@@ -28,16 +28,26 @@ body {
   display: flex;
   width: 100vw;
   height: 100vh;
-  justify-content: space-between;
   max-width: 192rem;
 }
 
-nav {
+.navbar {
   position: relative;
   display: flex;
   flex-direction: column;
   padding: 2.1rem;
-  width: 12%;
+  width: 16.3rem;
+}
+
+main {
+  display: flex;
+  justify-content: flex-end;
+  width: 88%;
+}
+
+.right-menu--box {
+  padding: 2.1rem;
+  width: 19.1rem;
 }
 
 h1,
@@ -99,12 +109,14 @@ a:hover {
 
 .menu--components {
   display: flex;
+  align-items: center;
 }
 
 .menu--icon {
-  height: 2rem;
+  height: 1rem;
   width: 2rem;
   margin: 0 1rem;
+  padding: 1rem 0;
 }
 
 .menu--middle-line {
@@ -118,7 +130,6 @@ a:hover {
 
 .menu--top-line {
   content: " ";
-  margin: 0.2rem 0;
   display: block;
   height: 0.2rem;
   width: 1.4rem;
@@ -127,11 +138,10 @@ a:hover {
 
 .menu--bottom-line {
   content: " ";
-  margin: 0.2rem 0;
   display: block;
   height: 0.2rem;
   width: 1.4rem;
-  text-align: right;
+  float: right;
   background-color: black;
 }
 
@@ -139,26 +149,67 @@ a:hover {
   font-size: 1.2rem;
 }
 
+.product--box {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+
+.product-main-photo--box {
+  width: 50%;
+}
+
+.product-details--box {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.product-photo--box {
+  height: 60%;
+}
+
+.product-desc--box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5rem 4rem;
+  height: 40%;
+}
+
+.btn__circle {
+  height:
+}
+
 @media (max-width: 767px) {
+  main {
+    width: 100%;
+    height: 100%;
+  }
+
   .container {
     flex-direction: column;
   }
 
-  nav {
+  .navbar {
     flex-direction: row;
     justify-content: space-between;
+    padding: 2.1rem 0;
     width: 100%;
   }
 
   .logo--box {
-    width: 3rem;
+    display: flex;
+    align-items: center;
+    width: 2rem;
+    margin-left: 2.1rem;
   }
 
   .menu--box {
     position: relative;
     top: 0;
     transform: translateY(0%);
-    left: -3rem;
+    left: -1rem;
   }
 
   .menu--text {
@@ -175,5 +226,50 @@ a:hover {
 
   .right-menu--box {
     display: none;
+  }
+
+  .product--box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .product-main-photo--box {
+    width: 100%;
+    height: 100%;
+  }
+
+  .product-details--box {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .product-photo--box {
+    display: none;
+  }
+
+  .product-desc--box {
+    height: 15rem;
+  }
+}
+
+@media (max-width: 374px) {
+  .product--box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-details--box {
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+    height: 50%;
+  }
+
+  .product-desc--box {
+    height: 100%;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
   }
 }

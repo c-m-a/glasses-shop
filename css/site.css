@@ -1,0 +1,15 @@
+/* Reset */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherent;
+}
+
+/* Using inheretance */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+

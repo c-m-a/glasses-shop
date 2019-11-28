@@ -7,6 +7,12 @@
   box-sizing: inherent;
 }
 
+:root {
+  --mine-shaft: #313131;
+  --silver: #b9b9b9;
+  --sand: #f5f5f5;
+}
+
 /* Using inheretance */
 html {
   box-sizing: border-box;

@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Helvetica Neue Reg";
+  src: url("../fonts/helveticaneue.ttf") format("ttf"),
+      url("../fonts/helveticaneue.eot") format("eot"),
+      url("../fonts/helveticaneue.woff") format("woff"),
+      url("../fonts/helveticaneue.woff2") format("woff2"),
+      url("../fonts/helveticaneue.otf") format("oft"),
+      url("../fonts/helveticaneue.svg") format("svf");
+}

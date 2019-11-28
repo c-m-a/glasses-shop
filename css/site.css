@@ -36,7 +36,7 @@ nav {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 2.1rem;
   width: 12%;
 }
 
@@ -59,7 +59,7 @@ a:hover {
   list-style-type: none;
 }
 
-[class$="--item"] {
+[class*="--item"] {
   text-transform: capitalize;
 }
 
@@ -69,12 +69,12 @@ a:hover {
 
 .category--box {
   position: absolute;
-  top: 20%;
+  top: 26%;
   transform: translateY(-50%);
 }
 
-.category--item {
-  margin: 1.5rem 0;
+.category--item__space {
+  margin: 3rem 0;
 }
 
 .menu--box {
@@ -85,12 +85,15 @@ a:hover {
 
 .social--box {
   position: absolute;
-  bottom: 2rem;
-  left: 2rem;
+  bottom: 2.1rem;
+  left: 2.1rem;
 }
 
 .social--item {
   font-size: 1.2rem;
+}
+
+.social--item__space {
   margin: 1.2rem 0;
 }
 
@@ -167,6 +170,10 @@ a:hover {
   }
 
   .social--box {
+    display: none;
+  }
+
+  .right-menu--box {
     display: none;
   }
 }

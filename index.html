@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="container">
-      <nav>
+      <nav class="navbar">
         <div class="logo--box">
           <h3>glassify</h3>
         </div>
@@ -39,11 +39,22 @@
         </div>
       </nav>
       <main>
-        <section>
-          <div class="cover-foto--box"></div>
-          <div class="details--box">
-            <div class="details--title"></div>
-            <div class="details--link"></div>
+        <section class="product--box">
+          <div class="product-main-photo--box">
+            <img class="product--cover" src="" alt="">
+          </div>
+          <div class="product-details--box">
+            <div class="product-photo--box">
+              <img class="product--photo" src="" alt="">
+            </div>
+            <div class="product-desc--box">
+              <div class="product--title">
+                <h2>glassify collection</h2>
+              </div>
+              <div class="product--link">
+                <a href="">Shop Now</a>
+              </div>
+            </div>
           </div>
         </section>
         <aside class="right-menu--box">
@@ -51,13 +62,19 @@
             <ul class="user-icons--list user-icons--list__nobullets">
               <li class="user-icons--item">
                 <span class="user-icons--text">cart</span>
-                <i class="user-icons--cart-icon"></i>
+                <button class="btn btn--user__circle">
+                  <i class="user-icons--cart-icon"></i>
+                </button>
               </li>
               <li class="user-icons--item">
-                <i class="user-icons--magnifier"></i>
+                <button class="btn btn--user__circle">
+                  <i class="user-icons--magnifier"></i>
+                </button>
               </li>
               <li class="user-icons--item">
-                <i class="user-icons--profile"></i>
+                <button class="btn btn--user__circle">
+                  <i class="user-icons--profile"></i>
+                </button>
               </li>
             </ul>
           </div>

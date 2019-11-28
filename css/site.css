@@ -19,3 +19,154 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  font-family: "Helvetica Neue Reg", arial, sans-serif;
+  font-size: 1.4rem;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: space-between;
+  max-width: 192rem;
+}
+
+nav {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  width: 12%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+a,
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+[class$="list__nobullets"] {
+  list-style-type: none;
+}
+
+[class$="--item"] {
+  text-transform: capitalize;
+}
+
+.logo--box {
+  width: 100%;
+}
+
+.category--box {
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+}
+
+.category--item {
+  margin: 1.5rem 0;
+}
+
+.menu--box {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.social--box {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+}
+
+.social--item {
+  font-size: 1.2rem;
+  margin: 1.2rem 0;
+}
+
+.menu--components {
+  display: flex;
+}
+
+.menu--icon {
+  height: 2rem;
+  width: 2rem;
+  margin: 0 1rem;
+}
+
+.menu--middle-line {
+  content: " ";
+  margin: 0.2rem 0;
+  display: block;
+  height: 0.2rem;
+  width: 2rem;
+  background-color: black;
+}
+
+.menu--top-line {
+  content: " ";
+  margin: 0.2rem 0;
+  display: block;
+  height: 0.2rem;
+  width: 1.4rem;
+  background-color: black;
+}
+
+.menu--bottom-line {
+  content: " ";
+  margin: 0.2rem 0;
+  display: block;
+  height: 0.2rem;
+  width: 1.4rem;
+  text-align: right;
+  background-color: black;
+}
+
+.menu--text {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .logo--box {
+    width: 3rem;
+  }
+
+  .menu--box {
+    position: relative;
+    top: 0;
+    transform: translateY(0%);
+    left: -3rem;
+  }
+
+  .menu--text {
+    display: none;
+  }
+
+  .category--box {
+    display: none;
+  }
+
+  .social--box {
+    display: none;
+  }
+}

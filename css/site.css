@@ -9,6 +9,7 @@
 
 :root {
   --mine-shaft: #313131;
+  --light-silver: #f9f9f9;
   --silver: #b9b9b9;
   --sand: #f5f5f5;
 }
@@ -97,8 +98,64 @@ a:hover {
   transform: translateY(-50%);
 }
 
+.category--link__activated {
+  color: var(--silver);
+}
+
 .category--item__space {
   margin: 3rem 0;
+}
+
+.category--navbar {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 61%;
+  padding: 2.1rem 6rem;
+  z-index: 1;
+  background-color: white;
+}
+
+.gallery--box {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  top: 30.5rem;
+}
+
+.gallery--item {
+  margin: 0.1rem;
+  padding: 3rem 2.5rem;
+  width: 27.8%;
+  background-color: var(--light-silver);
+}
+
+.gallery--img-box {
+  position: relative;
+}
+
+.gallery--item-id {
+  position: absolute;
+}
+
+.gallery--img {
+  width: 100%;
+  z-index: -1;
+}
+
+.gallery--details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+[class$="--subcategory-item"]:nth-child(n+1) {
+  margin-top: 2rem;
+}
+
+.category--subcategory-list {
+  margin-top: 4rem;
 }
 
 .menu--box {
@@ -167,6 +224,7 @@ a:hover {
   display: flex;
   width: 100%;
   align-items: stretch;
+  overflow-y: scroll;
 }
 
 .product--main-photo-box {
@@ -339,6 +397,13 @@ a:hover {
     display: none;
   }
 
+  .category--navbar {
+    display: none;
+  }
+
+  .gallery--box {
+    top: 0;
+  }
   .social--box {
     display: none;
   }
@@ -371,6 +436,16 @@ a:hover {
   .product--desc-box {
     height: 15rem;
   }
+
+  .gallery--item {
+    width: 24%;
+  }
+}
+
+@media (max-width: 568px) {
+  .gallery--item {
+    width: 36%;
+  }
 }
 
 @media (max-width: 374px) {
@@ -390,5 +465,29 @@ a:hover {
     height: 100%;
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
+  }
+
+  .gallery--item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .category--navbar {
+    width: 55%;
+  }
+
+  .category__hide-1200px {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .category--navbar {
+    width: 45%;
+  }
+
+  .category__hide-1000px {
+    display: none;
   }
 }

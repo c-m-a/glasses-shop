@@ -212,9 +212,6 @@ a:hover {
   position: relative;
 }
 
-.user-icon--box {
-}
-
 .user--item {
   display: flex;
   justify-content: flex-end;

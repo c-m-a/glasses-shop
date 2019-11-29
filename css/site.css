@@ -24,11 +24,24 @@ body {
   font-size: 1.4rem;
 }
 
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+button:hover {
+  color: black;
+  background-color: white;
+}
+
 .container {
   display: flex;
   width: 100vw;
   height: 100vh;
   max-width: 192rem;
+  margin: 0 auto;
 }
 
 .navbar {
@@ -156,7 +169,23 @@ a:hover {
 }
 
 .product-main-photo--box {
+  display: flex;
+  flex-direction: column;
   width: 50%;
+}
+
+.product--img__responsive {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+}
+
+.product--img__h-50 {
+  height: 50%;
+}
+
+.product--img__imobile {
+  display: block;
 }
 
 .product-details--box {
@@ -166,6 +195,7 @@ a:hover {
 }
 
 .product-photo--box {
+  width: 100%;
   height: 60%;
 }
 
@@ -177,20 +207,118 @@ a:hover {
   height: 40%;
 }
 
-@media (max-width: 767px) {
+.right-menu--box {
+  position: relative;
+}
+
+.user-icon--box {
+}
+
+.user--item {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.user--text {
+  margin-right: 2.2rem;
+}
+
+.user--btn {
+  border: 0;
+}
+
+.user--btn__circle {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.user--btn__active {
+  color: white;
+  background-color: black;
+}
+
+.user--btn__p-2rem {
+  padding: 0.3rem;
+}
+
+.user--item:nth-child(2n) {
+  margin: 3rem 0;
+}
+
+.page--box {
+  position: absolute;
+  right: 2.1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.page--row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 1.5rem;
+}
+
+.page--row:nth-child(n+2) {
+  margin-top: 0.5rem;
+}
+
+.page--numbers {
+  margin-right: 4rem;
+}
+
+.page--indicator {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 2rem;
+  height: 1.1rem;
+}
+
+.page--bar {
+  content: " ";
+  display: block;
+  height: 0.3rem;
+  width: 0.75rem;
+  background-color: black;
+}
+
+.page--bar__active {
+  width: 1.5rem;
+}
+
+.scroll-down--box {
+  position: absolute;
+  bottom: 5rem;
+  right: 0.5rem;
+  text-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+
+@media (max-width: 768px) {
   main {
     width: 100%;
     height: 100%;
   }
 
+  .product--img__imobile {
+    display: none;
+  }
+
   .container {
+    display: flex;
     flex-direction: column;
   }
 
   .navbar {
     flex-direction: row;
     justify-content: space-between;
-    padding: 2.1rem 0;
+    padding: 1.5rem 0;
     width: 100%;
   }
 

@@ -150,6 +150,10 @@ a:hover {
   justify-content: space-between;
 }
 
+[class$="--subcategory-item"] {
+  text-transform: capitalize;
+}
+
 [class$="--subcategory-item"]:nth-child(n+1) {
   margin-top: 2rem;
 }

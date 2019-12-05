@@ -14,6 +14,10 @@ a [specificity tool](https://jonassebastianohlsson.com/specificity-graph/)
 to make the CSS file more eficient when the browser loads the site's styles
 sheets.
 
+To see more feather details about this project you can click on the next video.
+
+[![Loom Video](https://www.loom.com/embed/2597873271764794aad6e05206c22840)](https://www.loom.com/embed/2597873271764794aad6e05206c22840)
+
 ## Getting Started
 
 ### Prerequisites

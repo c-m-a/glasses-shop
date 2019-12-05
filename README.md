@@ -18,6 +18,8 @@ To see more feather details about this project you can click on the next video.
 
 [![Loom Video](https://cdn.loom.com/sessions/thumbnails/2597873271764794aad6e05206c22840-00001.mp4)](https://www.loom.com/embed/2597873271764794aad6e05206c22840)
 
+<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/2597873271764794aad6e05206c22840" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
 ## Getting Started
 
 ### Prerequisites

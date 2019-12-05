@@ -1,8 +1,8 @@
-# HTML & CSS capstone project: Glasses shop [LIVE](https://cma4c.github.io/glasses-shop/)
+# HTML & CSS capstone project: Glasses shop [LIVE](https://cma4c.github.io/glasses-shop/docs/)
 
 ## Description.
 
-[![Glasses Shop](https://github.com/cma4c/glasses-shop/blob/features/img/glasses-shop-index.png?raw=true)](https://cma4c.github.io/glasses-shop/)
+[![Glasses Shop](https://github.com/cma4c/glasses-shop/blob/features/img/glasses-shop-index.png?raw=true)](https://cma4c.github.io/glasses-shop/docs/)
 
 This project is based on an online
 [shop for sneakers](https://www.behance.net/gallery/80392909/AXEL-ARIGATO-Website).

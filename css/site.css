@@ -123,7 +123,7 @@ a:hover {
   margin: 0.1rem;
   padding: 3rem 2.5rem;
   width: 27.8%;
-  background-color: var(--light-silver);
+  background-color: var(--sand);
 }
 
 .gallery--img-box {
@@ -136,6 +136,8 @@ a:hover {
 
 .gallery--img {
   width: 100%;
+  min-width: 18rem;
+  max-width: 26rem;
   z-index: -1;
 }
 
@@ -232,12 +234,15 @@ a:hover {
   display: flex;
   flex-direction: column;
   width: 50%;
-  background-color: #f9f9f9;
+  background-color: var(--sand);
 }
 
 .product--img__responsive {
   width: 100%;
   height: 100%;
+  min-width: 15rem;
+  max-width: 30rem;
+  margin: 0 auto;
 }
 
 .product--img__h-50 {
@@ -255,8 +260,11 @@ a:hover {
 }
 
 .product--photo-box {
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 60%;
+  background-color: var(--sand);
 }
 
 .product--desc-box {
@@ -297,7 +305,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0.1rem;
-  background-color: white;
+  background-color: var(--sand);
 }
 
 .product--main-text {
@@ -322,7 +330,7 @@ a:hover {
   justify-content: space-between;
   margin: 0.1rem 0;
   padding: 2rem;
-  background-color: white;
+  background-color: var(--sand);
 }
 
 .product--size-li a {
@@ -340,7 +348,7 @@ a:hover {
 .product--desc {
   padding: 2.8rem 2rem;
   margin: 0.1rem 0;
-  background-color: white;
+  background-color: var(--sand);
 }
 
 .product--text-p {
@@ -359,7 +367,7 @@ a:hover {
   align-items: center;
   height: 6rem;
   width: 6rem;
-  background-color: white;
+  background-color: var(--sand);
   margin-right: 0.1rem;
 }
 
@@ -367,7 +375,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: var(--sand);
   margin-left: 0.1rem;
   width: 100%;
 }
@@ -388,6 +396,7 @@ a:hover {
   position: absolute;
   right: 2rem;
   top: 2rem;
+  background-color: var(--sand);
 }
 
 .product--img {
@@ -399,7 +408,6 @@ a:hover {
   display: flex;
   position: absolute;
   justify-content: space-between;
-  margin-right: 2rem;
   height: 6rem;
   bottom: 0;
   right: 0;
@@ -416,7 +424,8 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 40%;
+  width: 35%;
+  padding: 0 2.5rem;
   font-size: 1.2rem;
   background-color: white;
 }
@@ -642,6 +651,10 @@ a:hover {
   .product--box {
     display: flex;
     flex-direction: column;
+  }
+
+  .product--img__h-50 {
+    height: 100%;
   }
 
   .product--index-box {

@@ -639,6 +639,10 @@ a:hover {
     margin-right: 0;
     height: 18.4rem;
   }
+
+  .product--img__h-50 {
+    height: 30rem;
+  }
 }
 
 @media (max-width: 568px) {
